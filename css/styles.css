@@ -406,6 +406,7 @@ body {
 }
 
 /* ---приклад альтернативний--- */
+
 /* .customers-link:hover {
   border: 1px solid var(--button-hover-background);
 }
@@ -447,7 +448,57 @@ body {
 }
 
 .footer-container {
+  display: flex;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
   width: 264px;
+  /* outline: 1px solid red; */
+}
+
+.footer-soc-container {
+  width: 208px;
+  /* outline: 1px solid red; */
+}
+
+.footer-soc-titel {
+  color: var(--footer-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: #ffffff;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
 
 /*-------------------- Портфоліо --------------------*/
@@ -473,12 +524,22 @@ body {
   margin-bottom: 48px;
 }
 
+.samples-lists {
+  display: block;
+}
+
 .samples-list:nth-child(3n) {
   margin-right: 0;
 }
 
 .samples-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.samples-lists:focus,
+.samples-lists:hover {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .samples-pic-container {
